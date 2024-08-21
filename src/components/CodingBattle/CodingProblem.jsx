@@ -3,8 +3,8 @@ import toast from 'react-hot-toast';
 import { useNavigate, useParams } from 'react-router-dom';
 import { FaPlay } from "react-icons/fa6";
 import { Editor } from '@monaco-editor/react';
-import Loader from './Loader';
-import { AppContext } from '../context/AppContext';
+import Loader from '../Loader';
+import { AppContext } from '../../context/AppContext';
 
 const CodingProblem = () => {
 

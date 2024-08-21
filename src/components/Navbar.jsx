@@ -23,6 +23,8 @@ const Navbar = () => {
     const token = localStorage.getItem('token');
     if(token) {
       fetchUserDetails();
+    } else {
+      setLoggedIn(false);
     }
     // eslint-disable-next-line
   }, [fetchUserDetails]);

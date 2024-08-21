@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link, useNavigate, useParams } from 'react-router-dom';
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../../context/AppContext';
 import toast from 'react-hot-toast';
-import Loader from './Loader';
+import Loader from '../Loader';
 
 const ContestPage = () => {
 

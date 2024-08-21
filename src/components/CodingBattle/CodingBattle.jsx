@@ -1,9 +1,9 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { FaSearch } from "react-icons/fa";
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../../context/AppContext';
 import toast from 'react-hot-toast';
 import { useNavigate } from 'react-router-dom';
-import Loader from './Loader';
+import Loader from '../Loader';
 import { IoClose } from "react-icons/io5";
 
 const CodingBattle = () => {

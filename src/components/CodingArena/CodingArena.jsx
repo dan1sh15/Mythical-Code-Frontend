@@ -2,9 +2,9 @@ import React, { useContext, useEffect, useState } from 'react'
 import toast from 'react-hot-toast';
 import { Link } from 'react-router-dom';
 import { FaPlus } from "react-icons/fa6";
-import AddProblem from './AddProblem';
-import { AppContext } from '../context/AppContext';
-import Loader from './Loader';
+import AddProblem from '../Problems/AddProblem';
+import { AppContext } from '../../context/AppContext';
+import Loader from '../Loader';
 import { IoCaretBackSharp } from "react-icons/io5";
 import { IoCaretForwardSharp } from "react-icons/io5";
 
@@ -57,7 +57,7 @@ const CodingArena = () => {
   return (
     <>
       {
-        loading ? (<Loader />) : (
+        loading ? (<div className='h-screen flex items-center justify-center'><Loader /></div>) : (
           <div className={`pt-[13vh] pb-10 min-h-screen w-10/12 max-phone:w-[95%] max-ipad:w-11/12 mx-auto flex flex-col gap-y-7 ${showModal && 'opacity-[0.65]'} max-ipad:gap-y-5 max-md:gap-y-3`}>
             <h1 className='text-4xl max-ipad:text-3xl max-md:text-2xl max-phone:text-xl font-bold text-center drop-shadow-lg capitalize'>Welcome to the Coding Arena</h1>
 

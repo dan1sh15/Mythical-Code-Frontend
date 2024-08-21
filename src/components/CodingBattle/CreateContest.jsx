@@ -1,11 +1,11 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { useNavigate, useParams, Link } from 'react-router-dom'
-import { AppContext } from '../context/AppContext';
+import { AppContext } from '../../context/AppContext';
 import toast from 'react-hot-toast';
-import AddProblem from './AddProblem';
+import AddProblem from '../Problems/AddProblem';
 import { IoCaretBackSharp } from "react-icons/io5";
 import { IoCaretForwardSharp } from "react-icons/io5";
-import Loader from './Loader';
+import Loader from '../Loader';
 
 const CreateContest = () => {
 

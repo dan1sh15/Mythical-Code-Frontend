@@ -2,16 +2,16 @@ import './App.css';
 import Home from './components/Home';
 import Navbar from './components/Navbar';
 import { Route, Routes } from 'react-router-dom';
-import CodingArena from "./components/CodingArena";
-import Problem from './components/Problem';
+import CodingArena from "./components/CodingArena/CodingArena";
+import Problem from './components/Problems/Problem';
 import Login from './components/auth/Login';
 import Signup from './components/auth/Signup';
 import { useContext, useEffect } from 'react';
 import { AppContext } from './context/AppContext';
-import CodingBattle from './components/CodingBattle';
-import ContestPage from './components/ContestPage';
-import CodingProblem from './components/CodingProblem';
-import CreateContest from './components/CreateContest';
+import CodingBattle from './components/CodingBattle/CodingBattle';
+import ContestPage from './components/CodingBattle/ContestPage';
+import CodingProblem from './components/CodingBattle/CodingProblem';
+import CreateContest from './components/CodingBattle/CreateContest';
 
 function App() {
   const { setLoggedIn } = useContext(AppContext);

@@ -23,6 +23,8 @@ function AppContextProvider({ children }) {
             setUserData(responseData.user);
         }
         else if(responseData.message === "Invalid token") {
+            localStorage.removeItem('token');
+            setLoggedIn(false);
             navigate('/login');
         } 
         else {
