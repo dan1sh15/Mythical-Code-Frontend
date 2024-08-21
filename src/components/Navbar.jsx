@@ -48,7 +48,7 @@ const Navbar = () => {
                   </div>
                 ) : (
                   <Link to={'/login'} className='flex items-center justify-center'>
-                    <button className=' text-white border-2 border-white rounded font-semibold text-lg max-ipad:text-[1rem] max-md:text-sm max-phone:text-xs px-4 py-1 hover:bg-white hover:text-[#201E43] transition-all duration-300 ease-in-out'>Login</button>
+                    <button className=' text-white border-2 border-white rounded font-semibold text-lg max-ipad:text-[1rem] max-ipad:text-[#201e43] max-ipad:border-[#201e43] max-md:text-sm max-phone:text-xs px-4 py-1 hover:bg-white hover:text-[#201E43] transition-all duration-300 ease-in-out'>Login</button>
                   </Link>
                 )
             }
